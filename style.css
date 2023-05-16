@@ -1,0 +1,140 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body{
+    background: #1d1d1d;
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+}
+
+
+.header-left{
+    width: 20%;
+    /* background-color: rgb(236, 48, 89); */
+    height: 30px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header-left span{
+    color:#FFF;
+    letter-spacing: 2px;
+    font-size: 26px;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-middle{
+    width: 60%;
+    /* background-color: rgb(0, 255, 42); */
+    height: 30px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-middle .menu ul{
+    list-style: none;
+    display: flex;
+}
+
+
+.header-middle .menu ul li{
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor:pointer;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-middle .menu ul li:hover{
+    color:rgb(236, 48, 89);
+}
+
+.header-right{
+    width: 20%;
+    /* background-color: red; */
+    height: 30px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right .sign-in{
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: rgb(244, 244, 244);
+    font-size: 17px;
+    cursor:pointer;
+    transition: 0.2s linear;
+    background: rgb(236, 48, 89);
+    border-radius: 5px;
+
+}
+
+
+.header-right .sign-in:hover{
+    background: rgb(236, 48, 89);
+    color: #fff;
+}
+
+
+.header-right .menu-toggle{
+    padding: 5px;
+    background: #ffffffb9;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu ul{
+    list-style: none;
+}
+
+
+.mobile-menu ul li{
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor:pointer;
+    width: max-content;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.mobile-menu ul li:hover{
+    color:rgb(236, 48, 89);
+}
+
+
+@media(max-width:767.98px){
+    .header-middle .menu ul{
+        display: none !important;
+    }
+    .header-right .sign-in{
+        display: none;
+    }
+    .header-right .menu-toggle{
+        display: block !important;
+    }
+
+}
